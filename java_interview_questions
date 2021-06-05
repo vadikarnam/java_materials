@@ -1,0 +1,269 @@
+1. The difference between Inheritance and Composition?
+2. Diference between Composition, Aggregation and Association in OOP?
+3. Can we use String with switch case?
+4. What is Serialization ?
+5. The difference between Serializable and Externalizable in Java?
+6. Difference between TreeSet and TreeMap in Java? 
+7. How to sort a collection of custom Objects in Java?
+
+
+
+
+
+What is the main usage of Hashmap and what advantage you get?
+how Hashmap works?
+what is loadfactor? 
+what is rehashing technic?
+How do WeakHashMap works?
+Is it possible for two unequal objects to have the same hashcode?
+Can we use random numbers in the hashcode() method?
+Why you need to override hashcode, when you override equals in Java?
+What is equlas() and hashCode() contract in Java? Where does it used?
+
+Exception Handling:
+https://javaconceptoftheday.com/java-exception-handling-interview-questions-and-answers/
+
+1. What is difference between Checked and Unchecked Exception in Java?
+2. Explain the hierarchy of exceptions in java?
+3. What is the difference between ClassNotFoundException and NoClassDefFoundError in java?
+4. What are the legal combinations of try, catch and finally blocks?
+5. What Are the Rules We Need to Follow When Overriding a Method That Throws an Exception?(https://www.baeldung.com/java-exceptions-interview-questions)
+
+https://dzone.com/articles/9-best-practices-to-handle-exceptions-in-java
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+77) Tell me few best practices you apply while using Collections in Java? (answer)
+Here are couple of best practices I follow while using Collectionc classes from Java:
+a) Always use the right collection e.g. if you need non-synchronized list then use ArrayList and not Vector.
+b) Prefer concurrent collection over synchronized collection because they are more scalable.
+c) Always use interface to a represent and access a collection e.g. use List to store ArrayList, Map to store HashMap and so on.
+d) Use iterator to loop over collection.
+e) Always use generics with collection
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+22) 5 Coding best practices you learned in Java? (detailed answer)
+If you are developing on a programming language for couple of years, you sure knows lots of best practices, by asking couple of them, Interviewer just checking that you know your trade well. Here are my 5 Java best practices :
+- Always name your thread, this will help immensely in debugging.
+- Use StringBuilder for string concatenation
+- Always specify size of Collection, this will save lot of time spent on resizing
+- Always declare variable private and final unless you have good reason.
+- Always code on interfaces instead of implementation
+- Provide dependency to method instead they get it by themselves, this will make your code unit testable.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Read more: https://www.java67.com/2015/03/top-40-core-java-interview-questions-answers-telephonic-round.html#ixzz6Gv4pjmkb
+
+Have you done any performance tunning? if yes explain me.
+
+Which design pattern have you used in your production code? apart from Singleton?
+
+What is an immutable object? How do you create an Immutable object in Java?
+
+Can we create an Immutable object, which contains a mutable object?
+
+Read more: https://javarevisited.blogspot.com/2015/10/133-java-interview-questions-answers-from-last-5-years.html#ixzz6GuwkyFmH
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Spring Boot:
+
+What are some important features of using Spring Boot?
+What is auto-configuration in Spring boot? how does it help?
+What is starter dependency in Spring Boot? how does it help?
+Can you name some common Spring Boot Starter POMs?
+What is the difference between @SpringBootApplication and @EnableAutoConfiguration annotation?
+What are some common Spring Boot annotations?
+Can you control logging with Spring Boot? How?
+
+Read more: https://www.java67.com/2018/06/top-15-spring-boot-interview-questions-answers-java-jee-programmers.html#ixzz6Gv9w3UOS
+
+
+
+Question: How to disable a specific auto-configuration class?
+Answer: You can use the exclude attribute of@EnableAutoConfiguration,if you find any specific auto-configuration classes that you do not want are being applied.
+
+//By using "exclude"
+@EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+
+https://dzone.com/articles/top-10-spring-boot-interview-questions
+
+Can we override or replace the Embedded Tomcat server in Spring Boot?
+
+
+1. Java 8 features
+2. Concurrent Hashmap
+3. Application Performance how we can tune the application
+4. DB level caching
+5. App level caching
+6. Java Collections (ArrayList and Hasmap)
+7. Session Handling
+8. Microservices Architecture explanation
+9. Microservice proxy and registry
+10. Hibernate save and persist explanation
+11. Json parse in javascript
+12. SOAP and REST
+13. Lambda Expression and Java Time API
+14. Maven Build Mechanism
+15. Jenkins, Docker implementation
+16. TLS SNI Server Name Indentification (SNI) 
+17 How to secure REST API
+18 JWT token explanation
+19 Spring Boot Actuator explanation
+1. Java 8 features
+2. Concurrent Hashmap
+3. Application Performance how we can tune the application
+4. DB level caching
+5. App level caching
+6. Java Collections (ArrayList and Hasmap)
+7. Session Handling
+8. Microservices Architecture explanation
+9. Microservice proxy and registry
+10. Hibernate save and persist explanation
+11. Json parse in javascript
+12. SOAP and REST
+13. Lambda Expression and Java Time API
+14. Maven Build Mechanism
+15. Jenkins, Docker implementation
+16. TLS SNI Server Name Indentification (SNI)
+17 How to secure REST API
+18 JWT token explanation
+19 Spring Boot Actuator explanation
+20 Datastructures (Queue and stack)
+21 Database scaling
+22  How does Docker help in Microservices?
+23 How will you balance the server-side load by utilizing Spring Cloud?
+24 Microservices distributed computing challlenges
+
+
+
+1. How many objects will be created ?
+String S = new("Robert");
+String S = new String("Robert");
+String S = "Robert";
+       S = "Robert";
+2. Diference between throws and throw ?
+   Why throw instead of System.out.println()
+3. internal working of hashmap
+4. internal working of LinkedList
+5. Some Question based on answer
+6. for example, 4 thread are trying to insert to a single hashmap, will all the values be inserted?
+
+
+1. Tell me about your porject, What technology used?   
+2. Design a project from scratch (Controller, service, dao, security <- how to configure)
+3. throw and throws keyword difference. why throwing the excpetion instead of handling.
+4. How to Reverse LinkedList
+5. String s= new String("abc");// How many object will be created.
+   s = "xyz";
+6. LinkedList internal working.
+7. How request flow.
+8. How to handle Rest for xml as well 
+
+
+about current project
+how to start project from scratch
+internal implementation of hashmap
+session management
+why use intercepters
+architecture of the previous project
+request handling of Spring
+
+Aditya singh for weblogic developer
+Comparable and Comparator with code
+treeset uses
+Sorting Techniques 
+ArrayList and Vector
+Java 8 features
+list name sort by comparable
+is A relationshiphas A relationship
+spring architechture
+
+
+. Write a piece of code to filter Map using streams..
+2.Write piece of code for comparable and comparator.
+3.Equals and hashcode in details.
+4. TreeSet.
+5. Design patterns.
+6.Enums.
+7.Solid principle.
+8.Spring framework.
+9.Rest APi.(design one for get emp. all the interal details,
+10.Maven.
+
+
+
+	Good Experience in Java programming concepts of OOPS, Exception Handling, File IO, Collections & Multithreading.
+	Good amount experience about spring module like (IOC, Annotations, JDBC, AOP, MVC, Data JPA, Batch) etc.
+	Excellent working knowledge in developing web-based applications using popular frameworks like Spring MVC, Spring Boot .
+	Extensive Experience in using MVC (Model View Controller) architecture for developing applications using JSP.
+	Knowledge of deployment End to End process of enterprise Spring Boot Application.
+	Experience in Feign client, Eureka server, Ribbon, Zuul, Hystrix.
+	Expertise in Java Messaging Service (JMS), ActiveMQ and Kafka.
+	good knowledge of hibernate Annotations, Transaction, mapping, HQL Query,
+	Experience in developing web services using JAX-RS and Spring Rest
+	Experience in Restful Services using JAX-RS Injection and HTTP Methods.
+	Knowledge of Swagger Documentation and Yaml.
+	Good Knowledge of integration like Spring with Hibernate, Spring with Restful Services.
+	Strong exposure on Web Services and integration tier related technologies like XML , XSD, DOM , SAX ,JAX-P, JAX-B, JAX-WS(SOAP) and JAX-RS(Restful).
+	Hands on experience in using Application/Web servers like Tomcat servers.
+	Good knowledge in designing and developing UI components using HTML, CSS, JSP, JavaScript, Bootstrap and JQuery.
+	Good Experience of testing tools JUnit, Mockito and application tracking with the help of LOG4J.
+	Hands on experience on IDE’s Eclipse, STS, visual studio code, MySQL.
+	Hands on experience on tools such as SVN, GitHub, Maven, Postman, SoapUI, SonarQube, JIRA, Putty, WinSCP etc.
+
+
+Q1. How do we use and maintain profiles in Spring
+
+Spring Profiles provide a way to segregate parts of your application configuration and make it only available in certain environments. Any @Component or @Configuration can be marked with @Profile to limit when it is loaded: @Configuration @Profile("production")
+
+Q2. What are the different ways to configure a class as Spring Bean
+
+XML Configuration is the most popular configuration. The bean element tag is used in xml context file to configure a Spring Bean.
+
+Java Based Configuration, you can configure a Spring bean using @Bean annotation. This annotation is used with @Configuration classes to configure a spring bean.
+
+Annotation Based Configuration facilitates @Component, @Service, @Repository and @Controller annotations with classes to configure them to be as spring bean. For these, we would need to provide base package location to scan for these classes
+
+Q3. How do we secure REST API?
+
+Always Use HTTPS.
+Use Password Hash.
+Never expose information on URLs.
+Consider OAuth.
+Consider Adding Timestamp in Request.
+Input Parameter Validation.
+
+Q4. What are safe REST operations? for Edit the record which REST Method (http method) we can use.
+
+Representational state transfer (REST) means using the HTTP GET, POST, PUT, and DELETE operations to implement the CRUD operations: REST also assumes. use of a client-server architecture. Put method is used to edit the record.
+
+Q5. ArrayList, LinkedList, and Vector are all implementations of the List interface. Which of them is most efficient for adding and removing elements from the list?
+`
+LinkedList is generally going to give you the best performance. 
+
+ArrayList and Vector each use an array to store the elements of the list. As a result, when an element is inserted into (or removed from) the middle of the list, the elements that follow must all be shifted accordingly. Vector is synchronized, so if a thread-safe implementation is not needed, it is recommended to use ArrayList rather than Vector.
+
+LinkedList, on the other hand, is implemented using a doubly linked list. As a result, an inserting or removing an element only requires updating the links that immediately precede and follow the element being inserted or removed.
+
+Q6. How do you create a custom exception in Java?
+
+Create a new class whose name should end with Exception like ClassNameException. This is a convention to differentiate an exception class from regular ones.
+Make the class extends one of the exceptions which are subtypes of the java.lang.Exception class. Generally, a custom exception class always extends directly from the Exception class.
+Create a constructor with a String parameter which is the detail message of the exception. In this constructor, simply call the super constructor and pass the message.
+
+Q7. Why we use hibernate over JDBC?
+
+Unlike jdbc, hibernate connects with the database itself and uses hql (hibernate query language) to execute the queries, then maps the results to java objects. The database connection from an application is created using the session, which also helps in saving and retrieving the persistent object.
+
+
+
+
+
+
+
+
